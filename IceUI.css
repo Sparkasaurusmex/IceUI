@@ -242,6 +242,10 @@ i.fa-caret-left::before{
 /* #endregion */
 
 /* #region Chat Tab*/
+textarea:focus {
+    outline: 2px solid #65c0c5;
+    box-shadow: 0 0 6px #aefaff !important;
+}
 .message{
     background-image: url("/modules/IceUI/ui/img/iceBG.webp") !important;
 
