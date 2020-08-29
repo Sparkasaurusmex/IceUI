@@ -1,0 +1,726 @@
+a:hover {
+    text-shadow: 0 0 8px #FFFFFF;
+}
+/* #region Sidebar*/
+#sidebar {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: fixed;
+    right: 1px;
+    top: 1px;
+    width: 299px !important;
+    height: 99vh;
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid transparent;
+    border-image-source: url(/modules/IceUI/ui/img/panel1.webp);
+    border-image-slice: 21 fill;
+    background: none !important;
+}
+
+.collapse::before{
+    content: "";
+}
+
+#sidebar.collapsed {
+    width: 37px !important;
+    height: 349px !important;
+    padding-left: 4px;
+    border: 0px solid transparent;
+    border-image-source: url("/modules/IceUI/ui/img/panelTrans.webp");
+    border-image-slice: 35 fill;
+    background: none !important;
+}
+#sidebar.collapsed #sidebar-tabs > .item.active {
+    border-bottom: 1px solid #00ecff;
+}
+
+#sidebar-tabs{
+    text-align: center;
+    border-bottom: 1px solid #00eaff;
+    box-shadow: 0 0 10px #00fbff;
+    height: 32px;
+}
+
+#sidebar #sidebar-tabs > .item {
+    line-height: 0px;
+}
+
+i.fa-caret-right::before{
+    content: "";
+
+}
+
+.fa-caret-right{
+    background-image: url("/modules/IceUI/ui/img/arrow-right.webp") !important;
+    width: 25px;
+    height: 25px;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:20px 15px !important;
+    background-repeat: no-repeat;
+    content: "";
+    text-align: center;
+}
+
+i.fa-caret-left::before{
+    content: "";
+
+}
+
+.fa-caret-left{
+    background-image: url("/modules/IceUI/ui/img/arrow-left.webp") !important;
+    width: 25px;
+    height: 25px;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:20px 15px !important;
+    background-repeat: no-repeat;
+    content: "";
+    text-align: center;
+    vertical-align: top;
+}
+
+#sidebar #sidebar-tabs i.fa-comments {
+    content: "";
+    background-image: url("/modules/IceUI/ui/img/speechbubble.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+#sidebar-tabs > .item {
+    line-height: 0px;
+    height: 32px;
+}
+#sidebar-tabs > .item:hover {
+  box-shadow: 0 0 3px #b5f0ff inset;
+}
+#sidebar-tabs > .item.active {
+    border: 1px solid #00ecff;
+    box-shadow: 0 0 4px #b5f0ff inset;
+}
+#sidebar #sidebar-tabs i.fa-comments::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-fist-raised {
+    content: "";
+    background-image: url("/modules/IceUI/ui/img/fist-raised-solid.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+.sidebar-tab .directory-list .directory-item.active {
+    border-color: rgb(0, 255, 255, .6);
+    background-color: rgb(150, 255, 255, .1) !important;
+}
+
+#sidebar #sidebar-tabs i.fa-fist-raised::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-map {
+    content: "";
+    background-image: url("/modules/IceUI/ui/img/map-marked-alt-solid.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-map::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-users {
+    content: "";
+    background-image: url("/modules/IceUI/ui/img/users-solid.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-users::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-suitcase {
+    content: "";
+    background-image: url("/modules/IceUI/ui/img/box-open-solid.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-suitcase::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-book-open {
+    content: "";
+    background-image: url("/modules/IceUI/ui/img/scroll-solid.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-book-open::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-th-list {
+    content: "";
+    background-image: url("/modules/IceUI/ui/img/dice-solid.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-th-list::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-music {
+    content: "";
+    background-image: url("/modules/IceUI/ui/img/play-circle-regular.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-music::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-atlas {
+    content: "";
+    background-image: url("/modules/IceUI/ui/img/book-solid.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-atlas::before {
+    content: "";
+}
+
+#sidebar #sidebar-tabs i.fa-cogs {
+    content: "";
+    background-image: url("/modules/IceUI/ui/img/cog-solid.webp") !important;
+    width: 25px !important;
+    height: 25px !important;
+    display: inline-block !important;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#sidebar #sidebar-tabs i.fa-cogs::before {
+    content: "";
+}
+.sidebar-tab .directory-list .entity {
+    text-shadow: 1px 2px black;
+}
+/* #endregion */
+
+/* #region Chat Tab*/
+.message{
+    background-image: url("/modules/IceUI/ui/img/iceBG.webp") !important;
+
+}
+.message-sender {
+    color: darkred;
+    font-weight: bold;
+    border-bottom-color: darkred;
+    text-decoration: underline;
+}
+#chat-message{
+    background-image: url(/modules/IceUI/ui/img/iceBG.webp) !important;
+    box-shadow: 0px 0px 6px 1px #818488 inset;
+    border-radius: 5px;
+}
+
+.polyglot-lang-select select {
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    height: 24px;
+    top: 7px;
+    padding-top: 0px;
+    background: url(/modules/IceUI/ui/img/iceBG.webp) repeat !important;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-position: initial;
+    box-shadow: inset 0 0 10px #000000;
+    border-image: url(/modules/IceUI/ui/img/chat-controls-border.webp) 4 repeat;
+    border-image-width: 4px;
+    border-image-outset: 3px 2px 2px 2px;
+    color: #520000;
+    margin-top: -10px;
+}
+.roll-type-select{
+    color: white !important;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#chat-controls .control-buttons{
+    color: white;
+}
+
+#sidebar .sidebar-tab #chat-controls div.roll-type-select select {
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    height: 24px;
+    top: 7px;
+    padding-top: 3px;
+    background: url(/modules/IceUI/ui/img/iceBG.webp) repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-position: initial;
+    box-shadow: inset 0 0 10px #000000;
+    border-image: url(/modules/IceUI/ui/img/chat-controls-border.webp) 4 repeat;
+    border-image-width: 4px;
+    border-image-outset: 3px 2px 2px 2px;
+    color: #520000;
+}
+
+#combat-controls .combat-control{
+    background-image: url(/modules/IceUI/ui/img/buttongreenlight.webp);
+    text-align: center;
+    background-position: center !important;
+    background-size: 260px 100%!important;
+    background-repeat: no-repeat;
+}
+#combat #combat-controls {
+    margin: 1px;
+    border-top: 2px groove #00246d;
+    padding-top: 0px;
+}
+/* #endregion*/
+
+/* #region Sidebar Folder and widgets*/
+.sidebar-tab .directory-header .header-search input {
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    height: 24px;
+    top: 7px;
+    padding-top: 3px;
+    background: url(/modules/IceUI/ui/img/iceBG.webp) repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-position: initial;
+    box-shadow: inset 0 0 10px #000000;
+    border-image: url(/modules/IceUI/ui/img/chat-controls-border.webp) 4 repeat;
+    border-image-width: 4px;
+    border-image-outset: 3px 2px 2px 2px;
+    color: #520000;
+
+}
+.header-search{
+    padding-bottom: 8px;
+}
+.fa-search{
+    color: darkgoldenrod;
+}
+.fa-sort-amount-up{
+    color:darkgoldenrod;
+}
+
+.sidebar-tab .directory-footer button{
+    background-image: url(/modules/IceUI/ui/img/buttongreenlight.webp);
+    text-align: center;
+    background-position: center !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    padding-top: 1px;
+    margin-top: -5px;
+    border: 0px solid #b5b3a4;
+    color : white;
+    text-shadow: 2px 2px black ;
+}
+/* #endregion */
+
+/* #region Folders as buttons */
+.sidebar-tab .folder .folder-header {
+    background-image: url(/modules/IceUI/ui/img/buttonlight3.webp)  !important;
+    text-align: left !important;
+    background-position: center !important;
+    background-size: 100% 55px!important;
+    background-repeat: no-repeat !important;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    color: white;
+    padding-left: 25px;
+}
+
+.sidebar-tab .directory-list .directory.item h3 {
+    text-align: left !important;
+    padding-left: 25px;
+}
+
+#sidebar section.sidebar-directory ol.directory-list li.directory-item.folder header {
+    align-items: baseline;
+    text-align: left !important;
+    padding-left: 25px;
+}
+
+.subdirectory {
+    border-left: 1px solid gray !important;
+    border-bottom: 1px solid gray !important;
+    margin-left: 20px !important;
+}
+
+/* #endregion */
+
+/* #region Compendium headers */
+#compendium h3 {
+    text-align: left;
+    position: relative;
+    height: 30px;
+    top: 3px;
+    padding-top: 4px;
+    padding-left: 12px;
+    background: url(/modules/IceUI/ui/img/buttonbluelight.webp) no-repeat;
+    background-position-x: 0%;
+    background-size: 100% 55px;
+    background-position-y: 0%;
+    background-position: initial;
+    box-shadow: inset 0 0 10px #000000;
+    border-image: url(/modules/IceUI/ui/img/chat-controls-border.webp) 4 repeat;
+    border-image-width: 4px;
+    border-image-outset: 3px 2px 2px 2px;
+    color: #eeede0;
+    text-shadow: 2px 1px 0px #000000;
+}
+#compendium ol.compendium-list {
+    padding-left: 25px;
+    padding-top: 6px;
+}
+
+li.compendium-folder > .compendium-folder-header {
+    padding: 6px;
+    height: 22px;
+}
+li.compendium-pack{
+  background: url(/modules/IceUI/ui/img/CompFolders.webp) repeat;
+  margin: 1px !important;
+  padding: 2px 0 !important;
+}
+
+/* #endregion */
+/* Scene Controls */
+#controls .scene-control.active, #controls .control-tool.active, #controls .scene-control:hover, #controls .control-tool:hover {
+    color: #c3fffc;
+    border: 1px solid #00ecff;
+    border-bottom: 1px solid #00ecff;
+    box-shadow: 0 0 10px #b5f0ff;
+}
+#controls .scene-control, #controls .control-tool {
+    width: 33px;
+    height: 33px;
+    box-sizing: content-box;
+    font-size: 25px;
+    line-height: 33px;
+    box-shadow: 0 0 4px #000aa5;
+    margin: 0 0 4px;
+    color: #c3fffc;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* End Region */
+/* Frozen Logo */
+#logo {
+    background-image: url(/modules/IceUI/ui/img/icefvtt.webp);
+}
+/* Hotbar */
+#hotbar .macro.inactive:hover {
+    box-shadow: 0 0 10px #b5f0ff inset;
+    border: 1px solid #00ecff;
+}
+#hotbar .macro .macro-key {
+    top: 1px;
+    right: 1px;
+    padding: 0px 2px;
+    background: #0d007b;
+    color: #f0f0e0;
+}
+#hotbar .macro.inactive {
+    box-shadow: 0 0 5px #358ffb inset;
+}
+#hotbar .macro {
+    border: 1px solid #70c8e0;
+    border-radius: 1px;
+    background: rgba(118, 217, 255, 0.28);
+}
+#hotbar .macro.active:hover {
+    border: 1px solid #00ecff;
+    box-shadow: 0 0 8px #b5f0ff inset;
+
+}
+#hotbar #macro-list {
+        border: 1px solid #007df554;
+}
+#hotbar .bar-controls {
+    color: #edffff;
+    background: rgba(118, 217, 255, 0.28);
+    border: 1px solid #007df554;
+}
+#players {
+    background: rgba(118, 217, 255, 0.28);
+}
+/* End Region */
+/* navigation scene list */
+#navigation #nav-toggle {
+    background: rgba(118, 217, 255, 0.28);
+}
+#navigation #scene-list .scene {
+    background: rgba(118, 217, 255, 0.28) !important;
+}
+#scenes .scene h3 {
+    line-height: 43px !important;
+    text-shadow: 2px 1px 2px #000;
+}
+#scenes .scene {
+    height: 50px !important;
+}
+
+/* #region Remove speaker name background colors in Chat window */
+#chat-log .message .message-header .message-sender {
+    background-color: rgba(0,0,0,0) !important;
+}
+/* #endregion */
+
+/* #region Fix so as not to bigfoot on VTTA's tag system */
+#sidebar section > ol.directory-list > li header > span.vtta-folder-label {
+    text-shadow: 0px 0px 0px black !important;
+}
+/* #endregion */
+
+/* #region Chat log */
+/* differentiate public roll from private or blind.
+ Private uses class whisper, blind uses class blind AND whisper, Self Roll
+ uses class whisper (identical to Private Roll for CSS) */
+#chat-log .message.whisper {
+
+    font-style: italic;
+}
+
+#chat-log .message.whisper .message-header .message-metadata::before{
+    color: #585858;
+    content: " (Private Roll) ";
+    float: left;
+}
+
+
+#chat-log .message.blind .message-header .message-metadata::before{
+    color: #585858;
+    content: " (Blind Roll) " !important;
+    float: left;
+}
+.window-app {
+  border: 4px solid transparent;
+  border-image-source: url(/modules/IceUI/ui/img/panel2.webp);
+  border-image-slice: 20 fill;
+  border-image-repeat: stretch;
+  background-image: url("/modules/IceUI/ui/img/IceDark.webp");
+}
+
+.window-app .window-content {
+  background: url(/modules/IceUI/ui/img/parchment3.webp) repeat;
+  box-shadow: 0px 0px 3px 1px inset;
+}
+.dnd5e.sheet .window-content {
+  background: url(/modules/IceUI/ui/img/parchment3.webp) repeat;
+  padding: 3px;
+}
+.dnd5e.sheet.actor.npc {
+    min-width: 600px;
+    min-height: 715px;
+}
+.dnd5e.sheet.actor.character {
+    min-width: 720px;
+    min-height: 740px;
+}
+.dialog .dialog-buttons button {
+  background-image: url(/modules/IceUI/ui/img/dialogbutton.webp);
+  background-size:cover;
+  border: 2px groove #f0f0e0;
+  margin: 0 5px 0 0;
+}
+.window-app .window-header {
+    box-shadow: 0 0 2px 0px #a29e9e inset;
+
+}
+.window-app.minimized{
+    border: 0px solid #000000;
+}
+.window-app.minimized .window-header {
+    border: 0px solid #000;
+}
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 4px;
+    background: #68f3fe;
+    border: 1px solid #0090ff;
+}
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: #82abef;
+}
+.app.sidebar-popout {
+    border: 1px solid #00ecff;
+}
+.dark-mode .window-app .window-content {
+  background: url(/modules/IceUI/ui/img/BG2.webp) repeat;
+}
+.dark-mode .dnd5e.sheet .window-content {
+  background: url(/modules/IceUI/ui/img/BG2.webp) repeat;
+}
+.dark-mode .dialog .dialog-buttons button {
+  background-image: url(/modules/IceUI/ui/img/dialogbuttonDark.webp);
+  background-size: cover;
+}
+button:hover {
+    box-shadow: 0 0 5px #0080ff;
+}
+.dark-mode .message{
+    background-image: url("/modules/IceUI/ui/img/BG2.webp") !important;
+}
+.dark-mode #chat-message{
+    background-image: url(/modules/IceUI/ui/img/BG2.webp) !important;
+}
+
+.dark-mode .polyglot-lang-select select {
+    background: url(/modules/IceUI/ui/img/BG2.webp) repeat !important;
+}
+.dark-mode .dnd5e.sheet.actor ul.attributes li.attribute .attribute-footer {
+
+    font-size: 11px;
+}
+/* #endregion */
+/* Calendar */
+#calendar {
+    background: rgba(0, 0, 0, 0.7);
+}
+#calendar-btn-day {
+    color: #bdbd7e;
+}
+#calendar-btn-night {
+    color: lightblue;
+}
+#calendar-btn-quick {
+    color: #a03448;
+}
+#calendar-btn-long {
+    color: #a03448;
+}
+#calendar-btn-fiveMin {
+    color: #a03448;
+}
+#calendar-btn-min {
+    color: #a03448;
+}
+#calendar-events {
+    color: whitesmoke;
+}
+#calendar-events:hover {
+    color: #f1ff1a;
+}
+#calendar-weather {
+    color: #aba9a9 !important;
+}
+#calendar-weather:hover {
+  color: white !important;
+}
+#calendar-btn-sec {
+    color: #a03448 !important;
+    cursor: pointer;
+}
+#calendar-btn-sec:hover {
+  color:white !important;
+}
+#calendar-btn-halfMin {
+    color: #a03448 !important;
+    cursor: pointer;
+}
+#calendar-btn-halfMin:hover{
+  color:white !important;
+}
+
+/* Navigation Buttons */
+#navigation #scene-list .scene.view, #navigation #scene-list .scene.context {
+    border: 1px solid #0024ff;
+    background: rgba(52, 52, 52, 0.95);
+    border-bottom: 1px solid #0024ff;
+    box-shadow: 0 0 4px #0024ff;
+}
+
+#navigation .nav-item {
+    line-height: 30px;
+    padding: 0px 1px;
+    margin: 0 5px 8px 0;
+    border-radius: 0px;
+}
+
+#navigation .nav-item:hover {
+  box-shadow: inset 0px 0px 0px 1px white;
+}
+/* Combat Utility Belt compatibility fix */
+.cub-puter-crt .window-content {
+    background: black !important;
+}
+
+/* ConditionIconHoverZoom */
+#token-hud .status-effects .effect-control:hover {
+    opacity: 1;
+    width: 70px;
+    height: 70px;
+}
+#token-hud .status-effects {
+    width: auto;
+    grid-template-columns: 50px 50px 50px 50px;
+}
+#token-hud .status-effects .effect-control {
+    width: 50px; height: 50px;
+}
+img.effect-control:hover {
+    max-width: 200%;
+    max-height: 200%;
+}
+#midi-qol-config {
+  width: 560px !important;
+}
+#client-settings {
+  border: 0px !important;
+}
+.filepicker {
+  width: 560px !important;
+}
