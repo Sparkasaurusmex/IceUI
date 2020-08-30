@@ -350,10 +350,10 @@ textarea:focus {
     padding-bottom: 8px;
 }
 .fa-search{
-    color: darkgoldenrod;
+    color: #54d0ff;
 }
 .fa-sort-amount-up{
-    color:darkgoldenrod;
+    color: #54d0ff;
 }
 
 .sidebar-tab .directory-footer button{
@@ -602,6 +602,7 @@ li.compendium-pack{
 .app.sidebar-popout {
     border: 1px solid #00ecff;
 }
+/* Dark Mode */
 .dark-mode .window-app .window-content {
   background: url(/modules/IceUI/ui/img/BG2.webp) repeat;
 }
@@ -630,6 +631,12 @@ button:hover {
     font-size: 11px;
 }
 /* #endregion */
+
+/*DND 5e Dark Mode */
+.dnd5edark.sheet .window-content {
+    background: url(/modules/IceUI/ui/img/BG2.webp) repeat !important;
+    color: #BFBFBF;
+}
 /* Calendar */
 #calendar {
     background: rgba(0, 0, 0, 0.7);
